@@ -1,6 +1,6 @@
 openai==0.27.4
 sentence_transformers==2.2.2
--f https://conda.anaconda.org/conda-forge -c conda-forge faiss
+-c conda-forge faiss=1.7.2
 streamlit==1.21.0
 streamlit_chat==0.0.2.2
 charset-normalizer==3.1.0
