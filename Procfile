@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run hanson_chat.py
+web: sh setup.sh && streamlit run app.py
