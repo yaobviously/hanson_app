@@ -8,7 +8,6 @@ import os
 import pandas as pd
 import numpy as np
 import openai
-import faiss
 
 import streamlit as st
 from streamlit_chat import message
@@ -34,9 +33,6 @@ posts = df['body'].values
 titles = df['title'].values
 links = df['url'].values
 
-# using faiss for indexing
-embeddings_idx = faiss.IndexFlatL2(embeddings.shape[1])
-embeddings_idx.add(embeddings)
 
 def get_hanson_articles(question=None, top_k=5, models=model):
     """    
@@ -47,11 +43,12 @@ def get_hanson_articles(question=None, top_k=5, models=model):
     print(question)
     query_embedding = models.encode(str(question))
     
-    d, i =  embeddings_idx.search(np.array([query_embedding]), top_k)
+    similarities = embeddings.dot(query_embedding)
+    indices = np.argsort(-similarities)
 
-    post_bodies = [posts[x] for x in i[0]]
-    post_titles = [titles[x] for x in i[0]]
-    links_ = [links[x] for x in i[0]]
+    post_bodies = [posts[x] for x in indices]
+    post_titles = [titles[x] for x in indices]
+    links_ = [links[x] for x in indices]
     
     return post_bodies[0] + post_bodies[1], links_[:2], post_titles[:2]
 
