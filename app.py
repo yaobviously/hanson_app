@@ -12,7 +12,6 @@ import openai
 import streamlit as st
 from streamlit_chat import message
 
-from sentence_transformers import SentenceTransformer
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -21,27 +20,26 @@ load_dotenv()
 openai.organization = os.environ.get('OPENAI_ORG')
 openai.api_key = os.environ.get('OPENAI_KEY')
 
-# getting the model
-model = SentenceTransformer('sentence-transformers/multi-qa-mpnet-base-dot-v1')
-
 # loading the dataframe and the embeddings array
 df = pd.read_csv('data/hanson_df.csv')
-embeddings = np.load('data/embedding_array.npy')
+embeddings = np.load('data/openai_hanson_embeddings.npy')
 
 # extracting the dataframe values
 posts = df['body'].values
 titles = df['title'].values
 links = df['url'].values
 
+def get_embedding(text, model="text-embedding-ada-002"):
+    return openai.Embedding.create(input = [text], model=model)['data'][0]['embedding']
 
-def get_hanson_articles(question=None, top_k=5, models=model):
+
+def get_hanson_articles(question=None, top_k=5):
     """    
     a function to return the body of the top match and the blog title
     of the top 5 entries (for now, testing)
     """
     
-    print(question)
-    query_embedding = models.encode(str(question))
+    query_embedding = get_embedding(str(question))
     
     similarities = embeddings.dot(query_embedding)
     indices = np.argsort(-similarities)
@@ -188,7 +186,6 @@ with container:
     if submit_button and user_input:
         output, total_tokens, prompt_tokens, completion_tokens, links = generate_response(
             query=user_input, messages=st.session_state['messages'])
-        print(links)
         st.session_state['past'].append(user_input)
         st.session_state['generated'].append(output)
         st.session_state['model_name'].append(model_name)
@@ -208,6 +205,7 @@ with container:
 if st.session_state['generated']:
     with response_container:
         for i in range(len(st.session_state['generated'])):
+            print(st.session_state['messages'])
             message(st.session_state["past"][i], is_user=True, key=str(i) + '_user')
             message(st.session_state["generated"][i], key=str(i))
             st.write(
