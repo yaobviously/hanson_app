@@ -52,34 +52,9 @@ def get_hanson_articles(question=None, top_k=5):
 
 get_hanson_articles(posts[55])
 
-# def generate_response(query=None, messages=None):    
-    
-#     posts, link = get_hanson_articles(query=query, top_k=2)
-#     prompt = messages.copy()
-    
-#     prompt.append({"role" : "user", "content" : f"I would like you to consider the following before answering the question: '{posts}'. Note that if the foregoing doesn't seem relevant, please inform the user that Hanson doesnt address that on his blog. Stick to what Hanson would say. {query}"})
-    
-#     response = (
-#         openai
-#         .ChatCompletion
-#         .create(
-#             model="gpt-3.5-turbo",
-#             max_tokens=300,
-#             messages=prompt)
-#         )
-#     print(response.usage.completion_tokens)
-
-#     generated_text = response.choices[0].message.content
-    
-#     messages.append({"role" : "user", "content" : f'{query}'})
-#     messages.append({"role" : "assistant", "content" : generated_text})
-    
-#     return generated_text, link
-
-
 # defining page header
 st.set_page_config(page_title="What Would Hanson Say?", page_icon=":robot_face:")
-st.markdown("<h1 style='text-align: center;'>The Robin Hanson Chatbot 😬</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>The Robin Hanson Chatbot 👇</h1>", unsafe_allow_html=True)
 
 # initializing state variables
 if 'generated' not in st.session_state:
@@ -125,24 +100,6 @@ if clear_button:
     st.session_state['cost'] = []
     st.session_state['total_cost'] = 0.0
     st.session_state['total_tokens'] = []
-
-
-# generate a response
-# def generate_response(prompt):
-#     st.session_state['messages'].append({"role": "user", "content": prompt})
-
-#     completion = openai.ChatCompletion.create(
-#         model=model,
-#         messages=st.session_state['messages']
-#     )
-#     response = completion.choices[0].message.content
-#     st.session_state['messages'].append({"role": "assistant", "content": response})
-
-#     # print(st.session_state['messages'])
-#     total_tokens = completion.usage.total_tokens
-#     prompt_tokens = completion.usage.prompt_tokens
-#     completion_tokens = completion.usage.completion_tokens
-#     return response, total_tokens, prompt_tokens, completion_tokens
 
 def generate_response(query=None, messages=None):    
     
