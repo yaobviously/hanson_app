@@ -1,0 +1,15 @@
+PROMPT:
+
+Write a detailed summary of the following:
+
+
+intelligence) e orts. On human futures, we can think of humans today as a NGC, or soon to become one. While we might not want to become a GC, many of the scenarios in which we do not are because we can not. For example, we may go extinct, or become permanently and strongly limited. So we might at least like to have the option to become grabby. Thus human future optimists tend to think that our descendants have a decent chance to birth a GC, and thus have low estimates of R. (One author's Twitter poll gave a median for humanity of R2:5.) In contrast, high estimates of Rare needed to expect SETI success anytime soon. The four Figures 17, 18, 19, and 20 show distributions over the ratio Rrequired to expect one active NGC in these four di erent spacetime regions where SETI might look: Within our past lightcone (Figure 17) Intersecting our past lightcone (Figure 18) Before \now" in our galaxy (Figure 19) \Now" in our galaxy (Figure 20) NGCs in regions further down this list seem easier for us to see if they are there, but require larger ratios Rfor any to be there to see. For example, human future optimists who seeR> 103as implausible should agree with SETI pessmimists who say there have probably never been aliens in our galaxy (4). To expect ten times as many NGCs in a region, you need a ratio Rten times higher. 28   GCs lower in the percentile rank rhave a smaller required Rr, and would for a true ratio RexpectR=RrNGC per region. Figures 17, 18, 19, and 20 show results for s=c; for s=c=2, ratios 8 or 4 times smaller are required. Figures 18 and 20 are for expected NGC lifetimes of L= 1Myr; for a lifetime ten times smaller, you need a ratio ten times larger. Thus the longevity of alien technosignatures is a key to SETI success (68). For example, aliens who build beacons that function long after their civilizations die may be much easier to see (69,70). Note that Figures 17 and 19 are actually versions of Figures 18 and 20 in the limit of indefinite lifetime L. Note
+
+
+DETAILED SUMMARY:
+
+==========
+
+RESPONSE:
+
+This article discusses the ratio of NGCs (technologically advanced civilizations) to R (the number of stars in a region), and how this ratio affects SETI (Search for Extra-Terrestrial Intelligence) efforts. It is suggested that human future optimists have a low estimate of R, meaning that they believe there is a decent chance for our descendants to birth a GC. In contrast, high estimates of R are needed to expect SETI success anytime soon. The article then goes on to discuss four different spacetime regions where SETI might look, and the ratio of R required to expect one active NGC in each region. It is noted that regions further down the list are easier for us to see if they are there, but require larger ratios R for any to be there to see. It is also noted that the longevity of alien technosignatures is key to SETI success, as aliens who build beacons that function long after their civilizations die may be much easier to see. Finally, it is noted that Figures 17 and 19 are actually versions of Figures 18 and 20 in the limit of indefinite lifetime L.

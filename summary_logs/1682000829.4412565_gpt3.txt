@@ -1,0 +1,15 @@
+PROMPT:
+
+Write a detailed summary of the following:
+
+
+expand in every direction at a constant local speed suntil meeting volumes controlled by other GC. Grabby civilizations are presumed to arise from non-grabby civilizations (NGC) within a short duration (less than ten million years) of the NGC's birth (8). We assume that NGCs which do not give birth to GCs have little cosmic impact, and thus do not block GCs from the activities that define them: being born, expanding, and changing volume appearances. Though we at times presume that humans today count as a NGC, we otherwise purposely say little about how exactly to define NGCs, so that many possible definitions can be applied. We assume that only one in Rsuch NGCs gives birth to a GC, and that this rate 1=Ris independent of the other parameters in our model, at least for NGCs who are not born within a GC-controlled volume. We will later show how this ratio Rrelates to the chances that each NGC could see evidence of other NGCs in various spacetime regions. We assume that once a volume is controlled by any GC, it is forever controlled by some GC, and forever looks different from non-GC-controlled volumes. We make no further as- sumptions about what happens after GCs meet, as our analysis will only consider GC and NGC origin events where residents can see that they are not in a GC-controlled volume. Once they meet, GCs might fight over volumes, or maintain peaceful borders at their meeting locations. Each GC might even, soon after birth, trigger a false vaccum decay, in effect destroying the universe, though this scenario requires expansion at lightspeed (credit for this suggestion to Adam Brown). We assume that each \small" (perhaps galaxy-region-sized) volume has the same uni- form per-volume chance of a GC being born there, a chance that is independent of the chances in other volumes (5). As this uniformity ignores the actual spatial clustering of galaxies, which is mainly on scales below 30 Mpc, we expect our model to be less accurate on such smaller scales. We
+
+
+DETAILED SUMMARY:
+
+==========
+
+RESPONSE:
+
+This paper examines the concept of Grabby Civilizations (GCs) and Non-Grabby Civilizations (NGCs). It is assumed that NGCs give birth to GCs within a short duration of their birth (less than 10 million years). It is also assumed that only one in R NGCs gives birth to a GC, and that this rate is independent of other parameters. Once a volume is controlled by a GC, it is assumed to be forever controlled by some GC and will look different from non-GC-controlled volumes. The paper also assumes that each small volume has the same uniform per-volume chance of a GC being born there, which is independent of the chances in other volumes. It is further assumed that once GCs meet, they might fight over volumes or maintain peaceful borders at their meeting locations. The paper also suggests that each GC might trigger a false vacuum decay soon after birth, in effect destroying the universe. The paper concludes by noting that its model is less accurate on smaller scales due to its uniformity assumption, which ignores the actual spatial clustering of galaxies.

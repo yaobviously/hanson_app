@@ -1,0 +1,15 @@
+PROMPT:
+
+Write a detailed summary of the following:
+
+
+dates, and regarding those origin events Figure 11 shows GC-controlled volume fractions. Figure 12 shows clock durations until a GC de- scendant meets aliens, Figure 13 shows the largest alien volume angle seen, and Figure 14 shows clock durations until a GC descendant sees aliens. Figure 15 shows distributions over the number of galaxies per GC at the simulation end, when GCs  ll all volumes, under the assumption that GCs who meet stop and retain their volumes. We apparently live on a one-in-a-million-galaxies \rare Earth" (24). Figure 16 shows how GC origin dates and volumes are related to each other. Note that the higher the volume-power, the more closely spaced are GC origin times, the fewer galaxies each GC encompasses, and the less time until our GC descendants would meet or see aliens. The earliest GCs tend to have the largest volumes. Out of all the figures in this paper, only Figures 10,12,12,14,16 depend on our assump- tion of a uniform distribution over humanity's origin rank among GCs. For those frustrated by diculties in reading numbers of our many graphs, Table 1 gives specific numbers for two scenarios. 27   Scenario: Scenario: s=c= 1=2; n= 6s=c= 3=4; n= 12 Percentile 1% 25% 75% 1% 25% 75% Origin (Gyr) 8.99 15.25 21.24 10.20 13.46 16.02 MinTillMeet (Gyr) 0.019 0.488 2.226 0.006 0.188 0.882 MinTillSee (Gyr) 0 0 0 0 0 0.425 MaxAngle 0 0.132 0.908 0 0 0.313 % Empty 0.010 0.320 0.830 0.010 0.290 0.810 Table 1. Speci c numbers for two scenarios, ( n;s=c ) = (6;1=2);(12;3=4). 15 SETI Implications The results we have shown so far have been on grabby civilizations (GCs), including where and when they exist, and how we might see or meet them. Let us now consider non-grabby civilizations (NGCs), who we have said are Rtimes more common than grabby ones; each NGC has a 1 =Rchance to soon birth a GC. This unknown ratio Rsets the chances for both humanity's grabbiness in the next ten million years, and also for success in SETI (search for extraterrestrial
+
+
+DETAILED SUMMARY:
+
+==========
+
+RESPONSE:
+
+This paper discusses the implications of SETI (Search for Extraterrestrial Intelligence) and the chances of success in SETI. It looks at grabby civilizations (GCs) and non-grabby civilizations (NGCs) and their origin dates, origin events, and volume fractions. It also looks at the clock durations until a GC descendant meets aliens, the largest alien volume angle seen, clock durations until a GC descendant sees aliens, and distributions over the number of galaxies per GC at the simulation end. The paper also considers how GC origin dates and volumes are related to each other. The paper provides two scenarios with specific numbers in Table 1. It concludes by discussing the implications for non-grabby civilizations, including their chances for soon birthing a GC, humanity's grabbiness in the next ten million years, and success in SETI.

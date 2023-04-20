@@ -1,0 +1,15 @@
+PROMPT:
+
+Write a detailed summary of the following:
+
+
+ u= coordinate speed as the universe expands. It instead slows down (65). Does this show that a GC which might in a static universe expand at a constant speed  u=does not in fact expand at such a constant speed in an expanding universe? No, because the frontier of an expanding civilization is less like an object thrown and more like the speed of a plane; a given scenario of wing drag and plane engine power will set a plane speed relative to the local air, not relative to the ground or its initial launch. Similarly, a civilization expands by stopping at local resources, developing those resources for a time, and then using them to travel another spatial distance (66). As this process is relative to local co-moving materials, it does maintain a constant model speed  u=. We run our simulations in a static model space u, and in model time . To convert our results from model time to clock time t, it suces to know the scale factor function a(t). This scale factor a(t) went ast1=2during the \radiation-dominated" era from the first second until about 50,000 years after the big bang, after which it went as t2=3during the \matter-dominated" era. In the last few billion years, it has been slowly approaching e tas dark energy comes to dominate. Assume that the scale factor is a power law a(t) =tm, and that we today are at percentile rank rin the distribution over GC origin dates. If so, we can convert from model time to clock time tviat=t0(=0)1=(1 m)andr=F(0), wheret0= 13:787 Gyr is a best estimate of the current age of the universe, and F() is the c.d.f. over GC model origin times. We can also convert between clock-time volume-power nand model-time volume-power via=n=(1 m). Now, a least-squared-error fit of a power law to the actual a(t) within 0-20 Gyr after the Big Bang gives a best fit of m0:90. However, as this mvalue tends to give more extreme results, we conservatively use m= 2=3 in most of our analysis. In Section 17.2, we show how some results
+
+
+DETAILED SUMMARY:
+
+==========
+
+RESPONSE:
+
+This passage discusses the concept of coordinate speed as it relates to the expanding universe. It explains that a Galactic Civilization (GC) might expand at a constant speed in a static universe, but in an expanding universe this is not the case. The passage then explains how to convert results from model time to clock time t, using the scale factor function a(t). It states that during the radiation-dominated era, the scale factor was ast1=2, and during the matter-dominated era it was ast2=3. In recent years, it has been slowly approaching e ta due to dark energy. It then explains how to convert between clock-time volume-power n and model-time volume-power  via =n=(1 m). Finally, it states that a least-squared-error fit of a power law to the actual a(t) within 0-20 Gyr after the Big Bang gives a best fit of m0:90, but for conservative analysis, m= 2=3 is used.

@@ -1,0 +1,15 @@
+PROMPT:
+
+Write a detailed summary of the following:
+
+
+collided with another GC) appear as a disk in the sky to the later one, with angle given by tan( =2) =x=(c(b x)), wherexsolvesd2=x2+ (c(b x))2. We can thus find a distribution over the max angle that each GC can see (6). (If the GC sees none, its max angle is zero.) J) We can find a distribution over GCs of the number of other GC origins that each GC can see at its origin. (This assumes transparent GC volumes.) K) A GC that appears as a disk of angle in the sky will have a border B() of angular length in the sky B() = 23=2(1 cos(=2))1=2. If GCs are transparent we can add up these border lengths over visible GCs to find a total border length visible at each GC origin, and then collect that into a distribution over all GC. L) We can select the subset of GCs who don't see any other GC-controlled-volume at their origin. This GC set can be used to compute other statistics conditional on not seeing GCs. The following statistics describe what we may see now regarding NGCs: L) An NGC to GC ratio R= (gt3 0=MN )(s=c)3  3is required to expect one prior NGC in the same Milky-Way-sized galaxy in the past light cone of a GC (or NGC) origin there at (model) time . Iterating through GC origin dates gives a distribution of such ratios. M) To be visible from Earth today, an NGC in our galaxy with a lifetime of Lwould have been born in clock time window of width [ t0 L;t0], which for Lt0is model time range [ (1 (L=(3t0));] , at least when m= 2=3. An NGC to GC ratio R= (3gt2 0=MNL ( 1))(s=c)3  2is required to expect an active NGC visible in a Milky-Way-sized galaxy at a GC (or NGC) origin there at . N) An NGC to GC ratio R= (1=8N)( (+ 4)=( ()( 1)))(s=c)3  3is required to expect one prior NGC anywhere in the past lightcone of a GC (or NGC) origin at time. O) An NGC to GC ratio R= (1=8N)( 2)(s=c)2(3t0=L)  3is required to expect one NGC whose active period intersects with the past lightcone of a GC (or NGC) origin at time . Code to simulate the grabby alien
+
+
+DETAILED SUMMARY:
+
+==========
+
+RESPONSE:
+
+This paper examines the relationship between Globular Clusters (GCs) and Nuclear Globular Clusters (NGCs) in a Milky-Way-sized galaxy. It looks at the maximum angle each GC can see, the number of other GC origins that each GC can see, the total border length visible at each GC origin, and the NGC to GC ratio required to expect an active NGC visible in a Milky-Way-sized galaxy. It also looks at the clock time window of width [t0 L; t0] required for an NGC to be visible from Earth today, and the NGC to GC ratio required to expect one prior NGC anywhere in the past lightcone of a GC (or NGC) origin. Finally, it provides code to simulate the grabby alien.

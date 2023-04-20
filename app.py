@@ -21,14 +21,21 @@ openai.organization = os.environ.get('OPENAI_ORG')
 openai.api_key = os.environ.get('OPENAI_KEY')
 
 # loading the dataframe and the embeddings array
-df = pd.read_csv('data/hanson_df.csv')
-embeddings = np.load('data/openai_hanson_embeddings.npy')
+blog_df = pd.read_csv('data/hanson_df.csv')
+blog_embeddings = np.load('data/blog_embeddings.npy')
+grabby_df = pd.read_csv('data/grabby_df.csv')
+grabby_embeddings = np.load('data/grabby_aliens_embeddings.npy')
+
+# stacking
+df = pd.concat([blog_df, grabby_df])
+embeddings = np.concatenate([blog_embeddings, grabby_embeddings])
 
 # extracting the dataframe values
 posts = df['body'].values
+posts = [x if len(x) < 15000 else x[:15000] for x in posts]
 titles = df['title'].values
 links = df['url'].values
-
+        
 def get_embedding(text, model="text-embedding-ada-002"):
     return openai.Embedding.create(input = [text], model=model)['data'][0]['embedding']
 
@@ -41,16 +48,30 @@ def get_hanson_articles(question=None, top_k=5):
     
     query_embedding = get_embedding(str(question))
     
-    similarities = embeddings.dot(query_embedding)
-    indices = np.argsort(-similarities)
+    # using dot product
+    # similarities = embeddings.dot(query_embedding)
+    # indices = np.argsort(-similarities)
+    
+    # using cosine distance
+    # calculate dot product between query array and each row of larger array
+    dot_products = np.dot(embeddings, query_embedding)
+    
+    # calc vector magnitudes
+    query_magnitude = np.linalg.norm(query_embedding)
+    embed_magnitudes = np.linalg.norm(embeddings, axis=1)
+    
+    # calculate cosine distances
+    cosine_distances = 1 - dot_products / (embed_magnitudes * query_magnitude)
+    indices = np.argsort(cosine_distances)
 
     post_bodies = [posts[x] for x in indices]
     post_titles = [titles[x] for x in indices]
     links_ = [links[x] for x in indices]
     
-    return post_bodies[0] + post_bodies[1], links_[:2], post_titles[:2]
-
-get_hanson_articles(posts[55])
+    if len(post_bodies[0] + post_bodies[1]) >= 16000:
+        return post_bodies[0] + 'NEW_POST' + post_bodies[1][:2000], links_[:2], post_titles[:2]
+    else:
+        return post_bodies[0] + 'NEW_POST' + post_bodies[1], links_[:2], post_titles[:2]
 
 # defining page header
 st.set_page_config(page_title="What Would Hanson Say?", page_icon=":robot_face:")
@@ -87,6 +108,7 @@ if model_name == "GPT-3.5":
     model = "gpt-3.5-turbo"
 else:
     model = "gpt-4"
+    
 
 # reset everything
 if clear_button:
@@ -108,26 +130,32 @@ def generate_response(query=None, messages=None):
     
     prompt.append({"role" : "user", "content" : f"I would like you to consider the following before answering the question: '{posts}'. Note that if the foregoing doesn't seem relevant, please inform the user that Hanson doesnt address that on his blog. Stick to what Hanson would say. {query}"})
     
-    response = (
-        openai
-        .ChatCompletion
-        .create(
-            model="gpt-3.5-turbo",
-            max_tokens=300,
-            messages=prompt)
-        )
-
-    generated_text = response.choices[0].message.content
+    try:
+        response = (
+            openai
+            .ChatCompletion
+            .create(
+                model="gpt-3.5-turbo",
+                max_tokens=250,
+                messages=prompt)
+            )
     
-    st.session_state['messages'].append({"role" : "user", "content" : f'{query}'})
-    st.session_state['messages'].append({"role" : "assistant", "content" : generated_text})
+        generated_text = response.choices[0].message.content
+        
+        st.session_state['messages'].append({"role" : "user", "content" : f'{query}'})
+        st.session_state['messages'].append({"role" : "assistant", "content" : generated_text})
+        
+        total_tokens = response.usage.total_tokens
+        prompt_tokens = response.usage.prompt_tokens
+        completion_tokens = response.usage.completion_tokens
     
-    total_tokens = response.usage.total_tokens
-    prompt_tokens = response.usage.prompt_tokens
-    completion_tokens = response.usage.completion_tokens
+    except:
+        generated_text = 'Sorry, the token limit was exceeded. Will be fixed, but for now rephrase.'
+        total_tokens = 5000
+        prompt_tokens = 0
+        completion_tokens = 0
     
-    return generated_text,  total_tokens, prompt_tokens, completion_tokens, link
-
+    return generated_text, total_tokens, prompt_tokens, completion_tokens, link
 
 
 # container for chat history
@@ -148,8 +176,13 @@ with container:
         st.session_state['model_name'].append(model_name)
         st.session_state['total_tokens'].append(total_tokens)
         
-        for i, link in enumerate(links):
-            st.sidebar.write(f"[]({link})")
+        print('before:', sum(st.session_state['total_tokens']))
+        
+        if sum(st.session_state['total_tokens']) >= 15000:
+            st.session_state['messages'] = st.session_state['messages'][:1] + \
+                st.session_state['messages'][-3:]
+                
+        print('after:', sum(st.session_state['total_tokens']))
 
         if model_name == "GPT-3.5":
             cost = total_tokens * 0.002 / 1000
@@ -162,7 +195,6 @@ with container:
 if st.session_state['generated']:
     with response_container:
         for i in range(len(st.session_state['generated'])):
-            print(st.session_state['messages'])
             message(st.session_state["past"][i], is_user=True, key=str(i) + '_user')
             message(st.session_state["generated"][i], key=str(i))
             st.write(

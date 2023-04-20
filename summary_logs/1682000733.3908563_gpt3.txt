@@ -1,0 +1,15 @@
+PROMPT:
+
+Write a detailed summary of the following:
+
+
+runaway greenhouses, and early loss of atmospheres and plate tectonics. Others, however, see these problems as real but not so severe. In Section 17.1, we will show that Equation (1) is, for our purposes, often at least crudely approximated by a power law. In our grabby aliens model, we will thus assume that the chance for an advanced civilization to arise in each \small" (perhaps galaxy size) volume by date tafter the big bang goes as tn. We assume that this tnform applies not just to the class of all advanced life and civilizations, but also in particular to the subclass of \grabby" civilizations. 6 Are Humans Early? In the history of the universe, humans have arrived late relative to the peak of star formation. However, many have noted that we seem to have arrived early relative to habitable places and times. Only 8% of interstellar gas has yet been turned into stars, and if stars of all masses were equally habitable, most habitable years should lie in planets at the far-longer-lived small mass stars. After all, 95% of stars last longer than our sun, and some last roughly two thousand times longer. Most calculations of human earliness estimate the timing of habitable planet durations, and many assume minimum duration lengths to produce advanced life. However, only one prior timing analysis (22) includes the hard steps power law that we include in Equation 10   (1). That one prior analysis finds, as we also find here, that high powers greatly favor later arrival dates, and so make our current date look much earlier. (Other authors have acknowledged the relevance of the hard steps model, but not applied its power law to timing estimates (23,42).) We now estimate human earliness as a function of the planet-based hard-steps power nand planet habitability, using two model parameters to represent variation in low mass star habitability. First, we allow the maximum habitable planet lifetime Lto vary from half of our sun's lifetime of L 10Gyr (or roughly Earth's
+
+
+DETAILED SUMMARY:
+
+==========
+
+RESPONSE:
+
+In this section, the authors discuss the concept of "runaway greenhouses, and early loss of atmospheres and plate tectonics" as potential problems for advanced civilizations. However, they also suggest that these problems may not be as severe as initially thought. To further explore this idea, the authors use an equation (1) which is often approximated by a power law. This power law is then used in their "grabby aliens" model to estimate the chance for an advanced civilization to arise in each volume by a certain date after the big bang. The authors then move on to discuss the concept of human earliness. They note that humans have arrived late relative to peak star formation, but early relative to habitable places and times. To estimate human earliness, they use two model parameters to represent variation in low mass star habitability and assume a maximum habitable planet lifetime of half of our sun's lifetime (L 10Gyr). They find that high powers greatly favor later arrival dates, making our current date look much earlier.

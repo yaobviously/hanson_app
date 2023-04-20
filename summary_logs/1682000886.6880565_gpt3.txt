@@ -1,0 +1,15 @@
+PROMPT:
+
+Write a detailed summary of the following:
+
+
+change for m= 0:9. Note that by assuming a uniform distribution over our origin rank r(i.e., that we are equally likely to be any percentile rank in the GC origin time distribution), we can convert distributions over model times (e.g., anF() over GC model origin times) into distributions over clock times t. This in effect uses our current date of 13.8Gyr to estimate a distribution over the model timescale constant k. If instead of the distribution F() we use the distribution F0(), which considers only those GCs who do not see any aliens at their origin date, we can also apply the information that we humans do not now see aliens. In the rest of this paper we will show spacetime diagrams in terms of model coordinates (u;), but when possible we will discuss and show statistics and distributions in terms of clock times t, including clock-time volume-powers n. To describe distributions of events in space within an expanding universe, we will focus when possible on counting galaxies, as their number seems to be largely conserved on our timescales of concern, and galaxies tend to stay near the same co-moving spatial coordinates u. At the current date, our universe now has g=7107galaxies per Gpc3(67). (This applies to galaxies defined as star clusters with mass >106M; there are 7 times more galaxies if we define them as mass >105M.) As the average stars per galaxy is 108, while our galaxy has 1011, our Milky Way galaxy should count as M=103average galaxies for events we expect to happen per star, such as GC and NGC births. If we identify our current date of t0= 13:787 Gyr with model time in [0;1], then a speeds= 1 model box [0 ;1]3corresponds to proper volume of ( t0=)3(s=c)3Gpc3at that timet0. Thus the model box holds G=g(t0=)3(s=c)3galaxies at allmodel and clock times. And the model volume corresponding to one average galaxy is at all times 1 =G. 11 Simulating The Model Our stochastic model scales in two ways. That is, two kinds of transformations preserve
+
+
+DETAILED SUMMARY:
+
+==========
+
+RESPONSE:
+
+This paper explores the concept of converting distributions over model times (e.g., anF( ) over GC model origin times) into distributions over clock times t. This is done by assuming a uniform distribution over origin rank r, and using the current date of 13.8Gyr to estimate a distribution over the model timescale constant k. The paper also focuses on counting galaxies, as their number seems to be largely conserved on our timescales of concern, and galaxies tend to stay near the same co-moving spatial coordinates u. The current date is identified with model time in [0;1], and a speeds= 1 model box [0 ;1]3corresponds to proper volume of ( t0= )3(s=c)3Gpc3at that timet0. Thus the model box holds G=g(t0= )3(s=c)3galaxies at allmodel and clock times, and the model volume corresponding to one average galaxy is at all times 1 =G. The stochastic model scales in two ways: transformations of space-time coordinates, and transformations of probability distributions. These transformations are used to simulate events such as GC and NGC births.

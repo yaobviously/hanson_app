@@ -1,0 +1,15 @@
+PROMPT:
+
+Write a detailed summary of the following:
+
+
+5 10 20 50 100 200 50012510205 10 20 50 100 200 500 1251020 MaxPlanetLifetime(Gyr)PowernFigure 4. Fraction of advanced life star birthdates within period from Big Bang to today that are after Sun's date b= 9:2Gyr, as given by Equation 1, using the same parameters as in Figure 2. 7 Model Rationale While our grabby alien model should ultimately stand or fall on how well it accounts for observations, readers may want to hear plausibility arguments regarding its key assump- tions. We have already discussed (in Section 3) reasons to expect a power law time depen- dence in the chances to originate advanced life in any one place, due to evolution needing to pass through several dicult steps. We will also suggest (in Section 17.1) that this kind of dependence often applies suciently well not just to planets, but also to large volumes like galaxies. But why might there exist civilizations who expand fast, steadily, and indefinitely, changing how their volumes look in the process? In Earth history, competing species, cultures, and organizations have shown consistent tendencies, when possible, to expand into new territories and niches previously unoccu- pied by such units. When such new territories offer supporting resources that can aid reproduction, then behaviors that encourage and enable such colonization have often been selected for over repeated episodes of expansion (64). (Note that individual motives are mostly irrelevant when considering such selection effects.) In addition, expansions that harness resources tend to cause substantial changes to local processes, which induce changed appearances, at least to observers who can su- ciently see key resources and processes. While these two tendencies are hardly iron laws of nature, they seem common enough to suggest that we consider stochastic models which embody them. 14   Furthermore, when uncoordinated local stochastic processes are aggregated to large enough scales, they often result in relatively steady and
+
+
+DETAILED SUMMARY:
+
+==========
+
+RESPONSE:
+
+This article discusses a model of advanced life origins that suggests a power law time dependence in the chances to originate advanced life in any one place due to evolution needing to pass through several difficult steps. It also suggests that civilizations have a tendency to expand fast, steadily, and indefinitely, changing how their volumes look in the process. This is due to competing species, cultures, and organizations having a tendency to expand into new territories and niches when possible in order to access resources that can aid reproduction. When aggregated to large enough scales, these uncoordinated local stochastic processes often result in relatively steady and predictable patterns. The article also provides evidence for the model by discussing how it accounts for observations and provides rationale for its key assumptions.

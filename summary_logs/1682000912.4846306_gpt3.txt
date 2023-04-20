@@ -1,0 +1,15 @@
+PROMPT:
+
+Write a detailed summary of the following:
+
+
+same factor. And we can transform it into samples with differing timescales kby rescaling all times and distances by the same factor. (Such 19 "samples" may describe the same basic stochastic pattern over larger or smaller spatial volumes, in essence holding more or less copies" of the same basic stochastic pattern.) We know that a spacetime event is controlled by some GC if it is precluded by any GC origin. While a larger sample of Ncandidate GC origins tends to induce a larger non-precluded set C, eventually Cstops increasing substantially with N, giving a \full" sample. Lightspeed ccan be varied relative to speed sto calculate who can see who in such a sample. When cis large compared to s, calculations of what can be seen must look outside the model box to consider an indefinite array of exact copies of that box and its contents in every direction. 12 Simulation Statistics Assume one has a sample of simulation runs, each of which tried Ncandidates and produced a set of Cgrabby civilizations at origins ( u;) within the model box [0 ;W]3. Here are some interesting statistics that one can calculate within each run (and average over multiple runs). The following statistics describe how GCs are distributed in space and time: A) We can collect a distribution F() over model GC origin times. (This is independent of speed s.) B) Given a set of GC model origin times, if we assume Earth today has its GC origin rankr, that gives a constant for converting all model times in that simulation into clock times. If we then assume a uniform distribution over Earth rank r(expressing the assumption that we have a spacetime-representative chance of birthing grabby descendants soon), we can convert any distribution over model times into a distri- bution over clock times. We can also take any distribution over pairs of model times into a distribution over clock durations between those times. (This is independent of speeds.) C) If at some date, the model volume wherein a particular GC is
+
+
+DETAILED SUMMARY:
+
+==========
+
+RESPONSE:
+
+This article discusses how to transform a spacetime event into samples with differing timescales by rescaling all times and distances by the same factor. It also explains how to calculate who can see who in a sample when the speed of light is varied relative to speed. Finally, it provides a list of simulation statistics that can be calculated within each run and averaged over multiple runs, such as a distribution over model GC origin times, a distribution over clock times, and a distribution over clock durations between model times. These statistics provide insight into how GCs are distributed in space and time.

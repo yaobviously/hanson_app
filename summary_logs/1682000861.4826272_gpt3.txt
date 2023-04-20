@@ -1,0 +1,15 @@
+PROMPT:
+
+Write a detailed summary of the following:
+
+
+the percentile rank rof the resulting distribution of      Figure 5. Illustration of the heuristic math model of Section 9 . arriving GC origins. This assumption implies 1 r rZx 0tn 1dt=Z1 xtn 11 t 1 xdt which is independent of speed sor constant k. This math model thus captures two key symmetries of our stochastic model, which are described in Section 11. For each volume-power n, there is some matching rank rwhere this heuristic model's prediction of (1  x)=xfor the ratio of median time till meet aliens to the median GC origin time equals a 1D simulation result for this ratio. This matching rank is 0:88 at n= 1, falls to a minimum of 0:61 atn= 4, and then rises up to 0:88 again at n= 24. This simple heuristic math model thus roughly captures some key features of our full stochastic model, such as having an overall stochastic shape that is independent of speed sand constant k. 10 Cosmology Our model seems to have a big problem: its cosmology has key objects maintaining constant spatial relations, yet our universe is expanding. Our rather standard solution: a change of coordinates. Usually, using ordinary local "ruler" spatial distances dvand \clock" time di erences dt, the spacetime metric distance dbetween events is (for lightspeed c= 1) given by d2=dt2 dv2. We instead use "model" coordinates, which are co-moving spatial positions du=dv=a(t) and conformal times d=dt=a(t). Herea(t) is a \scale factor" saying how much the universe has expanded at time trelative to time t= 1. Metric distance then becomesd2=a2(t)(d2 du2). (Note that this coordinate change preserves local speeds and also relative angles be- tween spatial positions. We can thus calculate such things in whichever coordinate system is more convenient.) In terms of our model spatial coordinates u, galaxies tend to stay near the same spatial positions. However, in an expanding universe a freely-falling object that starts at an initial speed  u=, and has no forces acting on it, does notmaintain that
+
+
+DETAILED SUMMARY:
+
+==========
+
+RESPONSE:
+
+This heuristic math model captures two key symmetries of a stochastic model, which are described in Section 11. It predicts the ratio of median time till meet aliens to the median GC origin time as (1 x)=xfor each volume-power n. This prediction is found to match a 1D simulation result at a percentile rank of 0:88 at n= 1, falling to a minimum of 0:61 atn= 4, and then rising up to 0:88 again at n= 24. The cosmology of the model has key objects maintaining constant spatial relations, yet our universe is expanding. To solve this problem, a change of coordinates is used, using "model" coordinates which are co-moving spatial positions du=dv=a(t) and conformal times d =dt=a(t). In terms of these coordinates, galaxies tend to stay near the same spatial positions, but a freely-falling object that starts at an initial speed  u= does not maintain that speed due to the expansion of the universe.
