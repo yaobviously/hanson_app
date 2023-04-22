@@ -125,7 +125,7 @@ if clear_button:
 
 def generate_response(query=None, messages=None):    
     
-    posts, link, _ = get_hanson_articles(question=query, top_k=2)
+    posts, links, titles = get_hanson_articles(question=query, top_k=2)
     prompt = messages.copy()
     
     prompt.append({"role" : "user", "content" : f"I would like you to consider the following before answering the question: '{posts}'. Note that if the foregoing doesn't seem relevant, please inform the user that Hanson doesnt address that on his blog. Stick to what Hanson would say. {query}"})
@@ -155,7 +155,7 @@ def generate_response(query=None, messages=None):
         prompt_tokens = 0
         completion_tokens = 0
     
-    return generated_text, total_tokens, prompt_tokens, completion_tokens, link
+    return generated_text, total_tokens, prompt_tokens, completion_tokens, links, titles
 
 
 # container for chat history
@@ -169,7 +169,7 @@ with container:
         submit_button = st.form_submit_button(label='Send')
 
     if submit_button and user_input:
-        output, total_tokens, prompt_tokens, completion_tokens, links = generate_response(
+        output, total_tokens, prompt_tokens, completion_tokens, links, titles = generate_response(
             query=user_input, messages=st.session_state['messages'])
         st.session_state['past'].append(user_input)
         st.session_state['generated'].append(output)
@@ -197,8 +197,8 @@ if st.session_state['generated']:
         for i in range(len(st.session_state['generated'])):
             message(st.session_state["past"][i], is_user=True, key=str(i) + '_user')
             message(st.session_state["generated"][i], key=str(i))
+            st.write("Links:")
+            st.markdown(f"[{titles[0]}]({links[0]})")
+            st.markdown(f"[{titles[1]}]({links[1]})")
             st.write(
                 f"Model used: {st.session_state['model_name'][i]}; Number of tokens: {st.session_state['total_tokens'][i]}; Cost: ${st.session_state['cost'][i]:.5f}")
-            st.write("Links:")
-            st.write(links[0] + "\n")
-            st.write(links[1] + "\n")
